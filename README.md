@@ -18,3 +18,8 @@ Includes a init.d script for Linux systems to auto start the rackup process.
 ```
   sudo update-rc.d geminabox defaults 21
 ```
+
+### 4. Edit the config.ru file to point to the full path of the data directory.
+```
+  Geminabox.data = "/home/rubygems/data"
+```

@@ -16,7 +16,7 @@
 APP_ROOT="/home/rubygems"
 RACK_PID="$APP_ROOT/rack.pid"
 RACK_UP="/usr/local/bin/rackup -E production -D -P $RACK_PID"
-NAME="rack"
+NAME="rackup"
 DESC="GemInABox service"
 
 check_pid(){
@@ -49,7 +49,7 @@ stop() {
   check_pid
   if [ "$PID" -ne 0 -a "$STATUS" -ne 0 ]; then
     ## Program is running, stop it.
-    kill -QUIT `cat $RACK_PID`
+    kill -9 `cat $RACK_PID`
     rm "$RACK_PID" >> /dev/null
     echo "$DESC stopped"
   else

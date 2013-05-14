@@ -1,9 +1,9 @@
 geminabox_scripts
 =================
 
-Includes a init.d script for Linux systems to auto start the rackup process. In this sample GemInABox is installed in home directory of the rubygems users /home/rubygems.
+Includes a init.d script for Linux systems to auto start the rackup process. In this sample GemInABox is installed in the home directory of the rubygems users /home/rubygems.
 
-### 1. Edit the config.ru file to point to the full path of the data directory.
+### 1. Edit the /home/rubygems/config.ru file to point to the full path of the data directory.
 ```
   Geminabox.data = "/home/rubygems/data"
 ```

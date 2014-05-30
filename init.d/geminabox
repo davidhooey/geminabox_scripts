@@ -15,7 +15,7 @@
 
 APP_ROOT="/home/rubygems"
 RACK_PID="$APP_ROOT/rack.pid"
-RACK_UP="/usr/local/bin/rackup -E production -D -P $RACK_PID"
+RACK_UP="source $APP_ROOT/.bash_profile; rackup -E production -D -P $RACK_PID"
 NAME="rackup"
 DESC="GemInABox service"
 
